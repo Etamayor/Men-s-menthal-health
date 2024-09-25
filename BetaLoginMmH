@@ -1,0 +1,76 @@
+import java.util.Scanner;
+
+public class App {
+    private static boolean isValidLogin(String[][] credentials, String username, String password) {
+        return credentials[0][0].equals(username) && credentials[0][1].equals(password);
+    }
+    private static boolean securePassword(String password, int lengthPass){
+        for(int i = 0; i<lengthPass; i++){
+            char character = password.charAt(i);
+            if (lengthPass > 15 || lengthPass < 5){
+                return false;
+            }
+            if (character == '$' || character == '%' || character == '^' || character == '&' ||  character == '*' || character == '_' || character == '-' || character == '!'){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        boolean specialChars = false;
+        boolean fftChars = false;
+        String[][] credentials = new String[1][2]; 
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Bienvenido a health and safety");
+
+        while (true) {
+            System.out.println("Ya has iniciado sesión? \n Presiona 1 para Si \n Presiona 2 para No");
+            int choice = scanner.nextInt();
+
+            if (choice == 1) {
+                Scanner input = new Scanner(System.in);
+                System.out.println("Ingrese su usuario");
+                String username = input.nextLine().trim(); 
+                System.out.println("Ingrese su contraseña");
+                String password = input.nextLine();
+
+                if (isValidLogin(credentials, username, password)) {
+                    System.out.println("Acceso concedido");
+                    
+                    break; 
+                } else {
+                    System.out.println("Usuario o contraseña inválidos. Intente nuevamente.");
+                }
+            } else if (choice == 2) {
+                System.out.println("Cree un usuario con su primer nombre");
+                Scanner sc = new Scanner(System.in);
+                String username = sc.nextLine().trim(); 
+                while (true){
+                    System.out.println("Cree una contraseña segura\n(evite nombres fáciles o información personal)\n Asegurese de que su contraseña contenga caracteres especiales\n La contraseña no puede tener mas de 15 caracteres");
+                    String password = sc.nextLine();
+                    int lengthPass = password.length();
+                    if (securePassword(password, lengthPass)){
+                        credentials[0][1] = password; 
+                        break;
+
+                    }
+                    else{
+                        System.out.println("intentelo de nuevo");
+                    }
+                }
+
+                credentials[0][0] = username;
+
+                System.out.println("Usuario creado exitosamente.");
+            } else {
+                System.out.println("Opción inválida. Intente nuevamente.");
+            }
+        }
+
+        scanner.close(); 
+    }
+
+    
+}
