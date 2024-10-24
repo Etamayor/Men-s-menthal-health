@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="602.0" style="-fx-background-color: fafafa;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+   <children>
+      <Rectangle height="168.0" layoutX="-14.0" layoutY="-15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="617.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0" startX="0.12796208530805686">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5631999969482422" green="0.8799999952316284" blue="0.6446628570556641" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.5631999969482422" green="0.8799999952316284" blue="0.6446628570556641" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.4425966441631317" green="0.39790448546409607" blue="0.9342105388641357" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle fill="WHITE" height="223.0" layoutX="147.0" layoutY="76.0" stroke="#a4a4a4" strokeType="INSIDE" strokeWidth="0.5" width="310.0" AnchorPane.bottomAnchor="101.0" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="145.0" AnchorPane.topAnchor="76.0" />
+      <Text fill="#444444" layoutX="195.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cuentanos acerca de ti">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="emailOrUsernameField" layoutX="213.0" layoutY="124.0" prefHeight="25.0" prefWidth="178.0" promptText="Usuario" />
+      <TextField fx:id="passwordField" layoutX="213.0" layoutY="192.0" prefHeight="25.0" prefWidth="178.0" promptText="Contraseña" />
+      <CheckBox fx:id="rememberMeCheckbox" layoutX="214.0" layoutY="223.0" mnemonicParsing="false" selected="true" text="Recuerdame" textFill="#444444" underline="true">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="loginButton" alignment="CENTER" layoutX="213.0" layoutY="243.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="178.0" text="SING UP" textFill="#444444">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="signUpButton" alignment="CENTER" defaultButton="true" layoutX="533.0" layoutY="9.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="LOGIN" textFill="#444444">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="emailOrUsernameField1" layoutX="213.0" layoutY="158.0" prefHeight="25.0" prefWidth="178.0" promptText="Email" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="602.0" style="-fx-background-color: fafafa;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+   <children>
+      <Rectangle height="415.0" layoutX="-14.0" layoutY="-15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="248.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0" startX="0.12796208530805686">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5631999969482422" green="0.8799999952316284" blue="0.6446628570556641" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.5631999969482422" green="0.8799999952316284" blue="0.6446628570556641" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.4425966441631317" green="0.39790448546409607" blue="0.9342105388641357" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text fill="#444444" layoutX="17.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TU PRIMERA PRUEBA" wrappingWidth="199.134765625">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Text>
+      <Text fill="#444444" layoutX="18.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Nombre de usuario) responde con sinceridad a cada pregunta, esto nos ayudara a determinar un plan de ayuda que se acomode a ti." wrappingWidth="199.134765625">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <Text fill="#444444" layoutX="17.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empecemos" wrappingWidth="199.134765625">
+         <font>
+            <Font name="System Bold" size="9.0" />
+         </font>
+      </Text>
+      <CheckBox layoutX="274.0" layoutY="37.0" mnemonicParsing="false" text="No me siento triste">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="274.0" layoutY="51.0" mnemonicParsing="false" text="Me siento triste">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="274.0" layoutY="65.0" mnemonicParsing="false" text="Me siento triste continuamente y no puedo dejar de estarlo">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="274.0" layoutY="79.0" mnemonicParsing="false" text="Me siento tan triste o tan desgraciado que no puedo soportarlo">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <Text fill="#444444" layoutX="266.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1) Estado de animo" wrappingWidth="199.134765625">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <CheckBox layoutX="274.0" layoutY="114.0" mnemonicParsing="false" text="No me siento especialmente desanimado respecto al futuro.">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="274.0" layoutY="128.0" mnemonicParsing="false" text="Me siento desanimado respecto al futuro. ">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="274.0" layoutY="142.0" mnemonicParsing="false" text="Siento que no tengo que esperar nada.">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="274.0" layoutY="156.0" mnemonicParsing="false" text="Siento que el futuro es desesperanzador y las cosas no mejorarán.">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <Text fill="#444444" layoutX="266.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2) Pesimismo" wrappingWidth="199.134765625">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <CheckBox layoutX="274.0" layoutY="191.0" mnemonicParsing="false" text="No me siento fracasado. ">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="274.0" layoutY="205.0" mnemonicParsing="false" text="Creo que he fracasado más que la mayoría de las personas.">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="274.0" layoutY="219.0" mnemonicParsing="false" text="Cuando miro hacia atrás, solo veo fracaso tras fracaso. ">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="274.0" layoutY="233.0" mnemonicParsing="false" text="Me siento una persona totalmente fracasada.">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <Text fill="#444444" layoutX="266.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3) Sentimiento de fracaso" wrappingWidth="199.134765625">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <CheckBox layoutX="274.0" layoutY="268.0" mnemonicParsing="false" text="Las cosas me satisfacen tanto como antes.">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="274.0" layoutY="282.0" mnemonicParsing="false" text="No disfruto de las cosas tanto como antes. ">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="274.0" layoutY="296.0" mnemonicParsing="false" text="Ya no obtengo una satisfacción auténtica de las cosas.">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="274.0" layoutY="310.0" mnemonicParsing="false" text="Estoy insatisfecho o aburrido de todo.">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <Text fill="#444444" layoutX="266.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4) Insatisfacción." wrappingWidth="199.134765625">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <CheckBox layoutX="274.0" layoutY="345.0" mnemonicParsing="false" text="No me siento especialmente culpable.">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="274.0" layoutY="359.0" mnemonicParsing="false" text="Me siento culpable en bastantes ocasiones.">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="274.0" layoutY="373.0" mnemonicParsing="false" text="Me siento culpable en la mayoría de las ocasiones. ">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <Text fill="#444444" layoutX="266.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5) Sentimientos de culpa." wrappingWidth="199.134765625">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <ProgressBar layoutX="478.0" layoutY="189.0" prefWidth="200.0" progress="0.2" rotate="90.0" />
+   </children>
+</AnchorPane>
