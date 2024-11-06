@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="602.0" style="-fx-background-color: fafafa;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="903.0" style="-fx-background-color: fafafa;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.pps_entrega3.LoginController">
     <children>
-        <Rectangle height="168.0" layoutX="-14.0" layoutY="-15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="617.0">
+        <!-- Fondo de degradado -->
+        <Rectangle height="252.0" layoutX="-21.0" layoutY="-22.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="925.5">
             <fill>
                 <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0" startX="0.12796208530805686">
                     <stops>
@@ -31,37 +37,28 @@
                 </LinearGradient>
             </fill>
         </Rectangle>
-        <Rectangle fill="WHITE" height="223.0" layoutX="147.0" layoutY="76.0" stroke="#a4a4a4" strokeType="INSIDE" strokeWidth="0.5" width="310.0" AnchorPane.bottomAnchor="101.0" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="145.0" AnchorPane.topAnchor="76.0" />
-        <Text fill="#444444" layoutX="227.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¡Hola de nuevo!">
+        <!-- Caja blanca para contener el formulario -->
+        <Rectangle fill="WHITE" height="334.5" layoutX="220.5" layoutY="139.0" stroke="#a4a4a4" strokeType="INSIDE" strokeWidth="0.5" width="465.0" AnchorPane.bottomAnchor="151.5" AnchorPane.leftAnchor="220.5" AnchorPane.rightAnchor="217.5" AnchorPane.topAnchor="139.0" />
+        <!-- Título del formulario -->
+        <Text fill="#444444" layoutX="368.5" layoutY="181.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Iniciar Sesión">
             <font>
-                <Font name="System Bold" size="20.0" />
+                <Font name="System Bold" size="30.0" />
             </font>
         </Text>
-        <Text fill="#444444" layoutX="178.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inicia sesión por medio de tu correo o usuario y tu contraseña.">
+        <!-- Campo de nombre de usuario -->
+        <TextField fx:id="usernameField" layoutX="319.5" layoutY="204.5" prefHeight="37.5" prefWidth="267.0" promptText="Usuario" />
+        <!-- Campo de contraseña -->
+        <PasswordField fx:id="passwordField" layoutX="319.5" layoutY="255.5" prefHeight="37.5" prefWidth="267.0" promptText="Contraseña" />
+        <!-- Botón para iniciar sesión -->
+        <Button fx:id="loginButton" alignment="CENTER" layoutX="319.5" layoutY="306.5" mnemonicParsing="false" prefHeight="37.5" prefWidth="267.0" text="LOGIN" textFill="#444444">
             <font>
-                <Font size="9.0" />
-            </font>
-        </Text>
-        <TextField fx:id="emailOrUsernameField" layoutX="213.0" layoutY="142.0" prefHeight="25.0" prefWidth="178.0" promptText="Email o Usuario" />
-        <TextField fx:id="passwordField" layoutX="213.0" layoutY="178.0" prefHeight="25.0" prefWidth="178.0" promptText="Contraseña" />
-        <CheckBox fx:id="rememberMeCheckbox" layoutX="214.0" layoutY="217.0" mnemonicParsing="false" selected="true" text="Recuerdame" textFill="#444444" underline="true">
-            <font>
-                <Font size="9.0" />
-            </font>
-        </CheckBox>
-        <Text fx:id="forgotPasswordText" fill="#444444" layoutX="301.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Olvidaste contraseña?" underline="true">
-            <font>
-                <Font size="9.0" />
-            </font>
-        </Text>
-        <Button fx:id="loginButton" alignment="CENTER" layoutX="213.0" layoutY="235.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="178.0" text="LOGIN" textFill="#444444">
-            <font>
-                <Font name="System Bold" size="12.0" />
+                <Font name="System Bold" size="18.0" />
             </font>
         </Button>
-        <Button fx:id="signUpButton" alignment="CENTER" defaultButton="true" layoutX="533.0" layoutY="9.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="SIGN UP" textFill="#444444">
+        <!-- Botón para cambiar a la pantalla de registro -->
+        <Button fx:id="signUpButton" alignment="CENTER" defaultButton="true" layoutX="799.5" layoutY="13.5" mnemonicParsing="false" prefHeight="37.5" prefWidth="96.0" text="SIGN UP" textFill="#444444" onAction="#handleSignUp">
             <font>
-                <Font name="System Bold" size="12.0" />
+                <Font name="System Bold" size="18.0" />
             </font>
         </Button>
     </children>
