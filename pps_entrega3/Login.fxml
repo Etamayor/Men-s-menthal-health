@@ -13,7 +13,6 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="903.0" style="-fx-background-color: fafafa;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.pps_entrega3.LoginController">
     <children>
-        <!-- Fondo de degradado -->
         <Rectangle height="252.0" layoutX="-21.0" layoutY="-22.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="925.5">
             <fill>
                 <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0" startX="0.12796208530805686">
@@ -25,7 +24,7 @@
                         </Stop>
                         <Stop offset="0.006711409395973154">
                             <color>
-                                <Color red="0.5631999969482422" green="0.8799999952316284" blue="0.6446628570556641" />
+                                <Color red="0.5631999969482422" green="0.8799999952316304" blue="0.6446628570556684" />
                             </color>
                         </Stop>
                         <Stop offset="1.0">
@@ -37,25 +36,19 @@
                 </LinearGradient>
             </fill>
         </Rectangle>
-        <!-- Caja blanca para contener el formulario -->
         <Rectangle fill="WHITE" height="334.5" layoutX="220.5" layoutY="139.0" stroke="#a4a4a4" strokeType="INSIDE" strokeWidth="0.5" width="465.0" AnchorPane.bottomAnchor="151.5" AnchorPane.leftAnchor="220.5" AnchorPane.rightAnchor="217.5" AnchorPane.topAnchor="139.0" />
-        <!-- Título del formulario -->
         <Text fill="#444444" layoutX="368.5" layoutY="181.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Iniciar Sesión">
             <font>
                 <Font name="System Bold" size="30.0" />
             </font>
         </Text>
-        <!-- Campo de nombre de usuario -->
         <TextField fx:id="usernameField" layoutX="319.5" layoutY="204.5" prefHeight="37.5" prefWidth="267.0" promptText="Usuario" />
-        <!-- Campo de contraseña -->
         <PasswordField fx:id="passwordField" layoutX="319.5" layoutY="255.5" prefHeight="37.5" prefWidth="267.0" promptText="Contraseña" />
-        <!-- Botón para iniciar sesión -->
-        <Button fx:id="loginButton" alignment="CENTER" layoutX="319.5" layoutY="306.5" mnemonicParsing="false" prefHeight="37.5" prefWidth="267.0" text="LOGIN" textFill="#444444">
+        <Button fx:id="loginButton" alignment="CENTER" layoutX="319.5" layoutY="306.5" mnemonicParsing="false" prefHeight="37.5" prefWidth="267.0" text="LOGIN" textFill="#444444" onAction="#handleLogin">
             <font>
                 <Font name="System Bold" size="18.0" />
             </font>
         </Button>
-        <!-- Botón para cambiar a la pantalla de registro -->
         <Button fx:id="signUpButton" alignment="CENTER" defaultButton="true" layoutX="799.5" layoutY="13.5" mnemonicParsing="false" prefHeight="37.5" prefWidth="96.0" text="SIGN UP" textFill="#444444" onAction="#handleSignUp">
             <font>
                 <Font name="System Bold" size="18.0" />
