@@ -1,20 +1,30 @@
 package sample.pps_entrega3;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
+import javafx.scene.text.Text;
 
-public class ResultadosController {
-
-    @FXML
-    private Button seleccionar_fisico;
+public class ResultadoController {
 
     @FXML
-    private Button seleccionar_mental;
+    private Text scoreText;
+    private String estado;
 
-    @FXML
-    private Button seleccionar_espiritual;
+    public void setScore(int score) {
+        estado = calcularEstadoDepresion(score);
+        scoreText.setText("Puntaje: " + score + " - Estado: " + estado);
+    }
 
-    @FXML
-    public void initialize() {}
-
+    private String calcularEstadoDepresion(int score) {
+        if (score >= 0 && score <= 13) {
+            return "Depresión mínima";
+        } else if (score >= 14 && score <= 19) {
+            return "Depresión moderada";
+        } else if (score >= 20 && score <= 28) {
+            return "Depresión desesperada";
+        } else if (score >= 29 && score <= 63) {
+            return "Depresión severa";
+        } else {
+            return "Puntaje fuera de rango";
+        }
+    }
 }
