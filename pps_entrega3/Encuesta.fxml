@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="602.0" style="-fx-background-color: fafafa;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.pps_entrega3.EncuestaController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="903.0" style="-fx-background-color: fafafa;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.pps_entrega3.EncuestaController">
    <children>
-      <ScrollPane layoutX="234.0" prefHeight="400.0" prefWidth="370.0">
-        <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
-        </content>
-      </ScrollPane>
-      <Rectangle height="415.0" layoutX="-14.0" layoutY="-15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="248.0">
+      <Rectangle height="600.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="361.0">
          <fill>
             <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0" startX="0.12796208530805686">
                <stops>
@@ -36,141 +36,554 @@
             </LinearGradient>
          </fill>
       </Rectangle>
-      <Text fill="#444444" layoutX="17.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TU PRIMERA PRUEBA" wrappingWidth="199.134765625">
+      <Text fill="#444444" layoutX="16.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TU PRIMERA PRUEBA" wrappingWidth="329.134765625">
          <font>
-            <Font name="System Bold" size="32.0" />
+            <Font name="System Bold" size="52.0" />
          </font>
       </Text>
-      <Text fill="#444444" layoutX="18.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Nombre de usuario) responde con sinceridad a cada pregunta, esto nos ayudara a determinar un plan de ayuda que se acomode a ti." wrappingWidth="199.134765625">
+      <Text fill="#444444" layoutX="16.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Responde con sinceridad a cada pregunta, esto nos ayudara a determinar un plan de ayuda que se acomode a ti." wrappingWidth="329.134765625">
          <font>
-            <Font size="9.0" />
+            <Font size="23.0" />
          </font>
       </Text>
-      <Text fill="#444444" layoutX="17.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empecemos" wrappingWidth="199.134765625">
+      <Text fill="#444444" layoutX="17.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empecemos" wrappingWidth="199.134765625">
          <font>
-            <Font name="System Bold" size="9.0" />
+            <Font name="System Bold" size="29.0" />
          </font>
       </Text>
-      <CheckBox layoutX="274.0" layoutY="37.0" mnemonicParsing="false" text="No me siento triste">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </CheckBox>
-      <CheckBox layoutX="274.0" layoutY="51.0" mnemonicParsing="false" text="Me siento triste">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </CheckBox>
-      <CheckBox layoutX="274.0" layoutY="65.0" mnemonicParsing="false" text="Me siento triste continuamente y no puedo dejar de estarlo">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </CheckBox>
-      <CheckBox layoutX="274.0" layoutY="79.0" mnemonicParsing="false" text="Me siento tan triste o tan desgraciado que no puedo soportarlo">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </CheckBox>
-      <Text fill="#444444" layoutX="266.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1) Estado de animo" wrappingWidth="199.134765625">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </Text>
-      <CheckBox layoutX="274.0" layoutY="114.0" mnemonicParsing="false" text="No me siento especialmente desanimado respecto al futuro.">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </CheckBox>
-      <CheckBox layoutX="274.0" layoutY="128.0" mnemonicParsing="false" text="Me siento desanimado respecto al futuro. ">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </CheckBox>
-      <CheckBox layoutX="274.0" layoutY="142.0" mnemonicParsing="false" text="Siento que no tengo que esperar nada.">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </CheckBox>
-      <CheckBox layoutX="274.0" layoutY="156.0" mnemonicParsing="false" text="Siento que el futuro es desesperanzador y las cosas no mejorarán.">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </CheckBox>
-      <Text fill="#444444" layoutX="266.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2) Pesimismo" wrappingWidth="199.134765625">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </Text>
-      <CheckBox layoutX="274.0" layoutY="191.0" mnemonicParsing="false" text="No me siento fracasado. ">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </CheckBox>
-      <CheckBox layoutX="274.0" layoutY="205.0" mnemonicParsing="false" text="Creo que he fracasado más que la mayoría de las personas.">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </CheckBox>
-      <CheckBox layoutX="274.0" layoutY="219.0" mnemonicParsing="false" text="Cuando miro hacia atrás, solo veo fracaso tras fracaso. ">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </CheckBox>
-      <CheckBox layoutX="274.0" layoutY="233.0" mnemonicParsing="false" text="Me siento una persona totalmente fracasada.">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </CheckBox>
-      <Text fill="#444444" layoutX="266.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3) Sentimiento de fracaso" wrappingWidth="199.134765625">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </Text>
-      <CheckBox layoutX="274.0" layoutY="268.0" mnemonicParsing="false" text="Las cosas me satisfacen tanto como antes.">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </CheckBox>
-      <CheckBox layoutX="274.0" layoutY="282.0" mnemonicParsing="false" text="No disfruto de las cosas tanto como antes. ">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </CheckBox>
-      <CheckBox layoutX="274.0" layoutY="296.0" mnemonicParsing="false" text="Ya no obtengo una satisfacción auténtica de las cosas.">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </CheckBox>
-      <CheckBox layoutX="274.0" layoutY="310.0" mnemonicParsing="false" text="Estoy insatisfecho o aburrido de todo.">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </CheckBox>
-      <Text fill="#444444" layoutX="266.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4) Insatisfacción." wrappingWidth="199.134765625">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </Text>
-      <CheckBox layoutX="274.0" layoutY="345.0" mnemonicParsing="false" text="No me siento especialmente culpable.">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </CheckBox>
-      <CheckBox layoutX="274.0" layoutY="359.0" mnemonicParsing="false" text="Me siento culpable en bastantes ocasiones.">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </CheckBox>
-      <CheckBox layoutX="274.0" layoutY="373.0" mnemonicParsing="false" text="Me siento culpable en la mayoría de las ocasiones. ">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </CheckBox>
-      <Text fill="#444444" layoutX="266.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5) Sentimientos de culpa." wrappingWidth="199.134765625">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </Text>
-      <ProgressBar layoutX="478.0" layoutY="189.0" prefWidth="200.0" progress="0.2" rotate="90.0" />
+      <ScrollPane layoutX="361.0" prefHeight="600.0" prefWidth="547.0" vvalue="1.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2734.0" prefWidth="530.0">
+               <children>
+                  <CheckBox fx:id="checkboxStart" userData="0" layoutX="33.0" layoutY="45.0" mnemonicParsing="false" text="0 No me siento triste.">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkbox0" userData="1" layoutX="33.0" layoutY="66.0" mnemonicParsing="false" text="1 Me siento triste gran parte del tiempo ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkbox1" userData="2" layoutX="33.0" layoutY="87.0" mnemonicParsing="false" text="2 Me siento triste todo el tiempo. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkbox2" userData="3" layoutX="33.0" layoutY="108.0" mnemonicParsing="false" text="3 Me siento tan triste o soy tan infeliz que no puedo soportarlo. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Text layoutX="14.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.   Tristeza">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="checkbox3" userData="0" layoutX="33.0" layoutY="173.0" mnemonicParsing="false" text="0 No estoy desalentado respecto del mi futuro. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox4" userData="1" layoutX="33.0" layoutY="194.0" mnemonicParsing="false" text="1 Me siento más desalentado respecto de mi futuro que lo que solía estarlo. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox5" userData="2" layoutX="33.0" layoutY="215.0" mnemonicParsing="false" text="2 No espero que las cosas funcionen para mi. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox6" userData="3" layoutX="33.0" layoutY="236.0" mnemonicParsing="false" text="3 Siento que no hay esperanza para mi futuro y que sólo puede empeorar. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Text layoutX="14.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Pesimismo ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="checkBox7" userData="0" layoutX="33.0" layoutY="297.0" mnemonicParsing="false" text="0 No me siento como un fracasado. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox8" userData="1" layoutX="33.0" layoutY="318.0" mnemonicParsing="false" text="1 He fracasado más de lo que hubiera debido. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox9" userData="2" layoutX="33.0" layoutY="339.0" mnemonicParsing="false" text="2 Cuando miro hacia atrás, veo muchos fracasos. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox10" userData="3" layoutX="33.0" layoutY="360.0" mnemonicParsing="false" text="3 Siento que como persona soy un fracaso total. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Text layoutX="14.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Fracaso ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="checkBox11" userData="0" layoutX="33.0" layoutY="425.0" mnemonicParsing="false" text="0 Obtengo tanto placer como siempre por las cosas de las que disfruto. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox12" userData="1" layoutX="33.0" layoutY="446.0" mnemonicParsing="false" text="1 No disfruto tanto de las cosas como solía hacerlo. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox13" userData="2" layoutX="33.0" layoutY="467.0" mnemonicParsing="false" text="2 Obtengo muy poco placer de las cosas que solía disfrutar. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox14" userData="3" layoutX="33.0" layoutY="488.0" mnemonicParsing="false" text="3 No puedo obtener ningún placer de las cosas de las que solía disfrutar. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Text layoutX="14.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Pérdida de Placer ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="checkBox15" userData="0" layoutX="33.0" layoutY="550.0" mnemonicParsing="false" text="0 No me siento particularmente culpable. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox16" userData="1" layoutX="33.0" layoutY="571.0" mnemonicParsing="false" text="1 Me siento culpable respecto de varias cosas que he hecho o haber hecho">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox17" userData="2" layoutX="33.0" layoutY="592.0" mnemonicParsing="false" text="2 Me siento bastante culpable la mayor parte del tiempo. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox18" userData="3" layoutX="33.0" layoutY="613.0" mnemonicParsing="false" text="3 Me siento culpable todo el tiempo. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Text layoutX="14.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Sentimientos de Culpa ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="checkBox19" userData="0" layoutX="33.0" layoutY="678.0" mnemonicParsing="false" text="0 No siento que este siendo castigado ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox20" userData="1" layoutX="33.0" layoutY="699.0" mnemonicParsing="false" text="1 Siento que tal vez pueda ser castigado. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox21" userData="2" layoutX="33.0" layoutY="720.0" mnemonicParsing="false" text="2 Espero ser castigado. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox22" userData="3" layoutX="33.0" layoutY="741.0" mnemonicParsing="false" text="3 Siento que estoy siendo castigado. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Text layoutX="14.0" layoutY="667.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Sentimientos de Castigo ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="checkBox23" userData="0" layoutX="34.0" layoutY="808.0" mnemonicParsing="false" text="0 Siento acerca de mi lo mismo que siempre. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox24" userData="1" layoutX="34.0" layoutY="829.0" mnemonicParsing="false" text="1 He perdido la confianza en mí mismo. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox25" userData="2" layoutX="34.0" layoutY="850.0" mnemonicParsing="false" text="2 Estoy decepcionado conmigo mismo. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox26" userData="3" layoutX="34.0" layoutY="871.0" mnemonicParsing="false" text="3 No me gusto a mí mismo. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Text layoutX="15.0" layoutY="797.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7. Disconformidad con uno mismo. ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="checkBox27" userData="0" layoutX="34.0" layoutY="936.0" mnemonicParsing="false" text="0 No me critico ni me culpo más de lo habitual ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox28" userData="1" layoutX="34.0" layoutY="957.0" mnemonicParsing="false" text="1 Estoy más crítico conmigo mismo de lo que solía estarlo ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox29" userData="2" layoutX="34.0" layoutY="978.0" mnemonicParsing="false" text="2 Me critico a mí mismo por todos mis errores ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox30" userData="3" layoutX="34.0" layoutY="999.0" mnemonicParsing="false" text="3 Me culpo a mí mismo por todo lo malo que sucede. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Text layoutX="15.0" layoutY="925.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8. Autocrítica ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="checkBox31" userData="0" layoutX="34.0" layoutY="1062.0" mnemonicParsing="false" text="0 No tengo ningún pensamiento de matarme. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox32" userData="1" layoutX="34.0" layoutY="1083.0" mnemonicParsing="false" text="1 He tenido pensamientos de matarme, pero no lo haría">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox33" userData="2" layoutX="34.0" layoutY="1104.0" mnemonicParsing="false" text="2 Querría matarme ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox34" userData="3" layoutX="34.0" layoutY="1125.0" mnemonicParsing="false" text="3 Me mataría si tuviera la oportunidad de hacerlo. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Text layoutX="15.0" layoutY="1051.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9. Pensamientos o Deseos Suicidas ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="checkBox35" userData="0" layoutX="34.0" layoutY="1190.0" mnemonicParsing="false" text="0 No lloro más de lo que solía hacerlo. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox36" userData="1" layoutX="34.0" layoutY="1211.0" mnemonicParsing="false" text="1 Lloro más de lo que solía hacerlo ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox37" userData="2" layoutX="34.0" layoutY="1232.0" mnemonicParsing="false" text="2 Lloro por cualquier pequeñez. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox38" userData="3" layoutX="34.0" layoutY="1253.0" mnemonicParsing="false" text="3 Siento ganas de llorar pero no puedo. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Text layoutX="15.0" layoutY="1179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10. Llanto ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="checkBox39" userData="0" layoutX="34.0" layoutY="1313.0" mnemonicParsing="false" text="0 No estoy más inquieto o tenso que lo habitual. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox40" userData="1" layoutX="34.0" layoutY="1334.0" mnemonicParsing="false" text="1 Me siento más inquieto o tenso que lo habitual. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox41" userData="2" layoutX="34.0" layoutY="1355.0" mnemonicParsing="false" text="2 Estoy tan inquieto o agitado que me es difícil quedarme quieto ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox42" userData="3" layoutX="34.0" layoutY="1376.0" mnemonicParsing="false" text="3 Estoy tan inquieto o agitado que tengo que estar siempre en movimiento">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Text layoutX="15.0" layoutY="1302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11 Agitación ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="checkBox43" userData="0" layoutX="34.0" layoutY="1441.0" mnemonicParsing="false" text="0 No he perdido el interés en otras actividades o personas. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox44" userData="1" layoutX="34.0" layoutY="1462.0" mnemonicParsing="false" text="1 Estoy menos interesado que antes en otras personas o cosas. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox45" userData="2" layoutX="34.0" layoutY="1483.0" mnemonicParsing="false" text="2 He perdido casi todo el interés en otras personas o cosas. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox46" userData="3" layoutX="34.0" layoutY="1504.0" mnemonicParsing="false" text="3.Me es difícil interesarme por algo. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Text layoutX="15.0" layoutY="1430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12 Pérdida de Interés ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="checkBox47" userData="0" layoutX="34.0" layoutY="1566.0" mnemonicParsing="false" text="0 Tomo mis propias decisiones tan bien como siempre. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox48" userData="1" layoutX="34.0" layoutY="1587.0" mnemonicParsing="false" text="1Me resulta más difícil que de costumbre tomar decisiones ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox49" userData="2" layoutX="34.0" layoutY="1608.0" mnemonicParsing="false" text="2 Encuentro mucha más dificultad que antes para tomar decisiones. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox50" userData="3" layoutX="34.0" layoutY="1629.0" mnemonicParsing="false" text="3 Tengo problemas para tomar cualquier decisión. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Text layoutX="15.0" layoutY="1555.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13. Indecisión ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="checkBox51" userData="0" layoutX="34.0" layoutY="1694.0" mnemonicParsing="false" text="0 No siento que yo no sea valioso ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox52" userData="1" layoutX="34.0" layoutY="1715.0" mnemonicParsing="false" text="1 No me considero a mi mismo tan valioso y útil como solía considerarme ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox53" userData="2" layoutX="34.0" layoutY="1736.0" mnemonicParsing="false" text="2 Me siento menos valioso cuando me comparo con otros. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox54" userData="3" layoutX="34.0" layoutY="1757.0" mnemonicParsing="false" text="3 Siento que no valgo nada. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Text layoutX="15.0" layoutY="1683.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14. Desvalorización ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="checkBox55" userData="0" layoutX="34.0" layoutY="1819.0" mnemonicParsing="false" text="0 Tengo tanta energía como siempre. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox56" userData="1" layoutX="34.0" layoutY="1840.0" mnemonicParsing="false" text="1. Tengo menos energía que la que solía tener. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox57" userData="2" layoutX="34.0" layoutY="1861.0" mnemonicParsing="false" text="2. No tengo suficiente energía para hacer demasiado ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox58" userData="3" layoutX="34.0" layoutY="1882.0" mnemonicParsing="false" text="3. No tengo energía suficiente para hacer nada. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Text layoutX="15.0" layoutY="1808.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15. Pérdida de Energía ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="checkBox59" userData="0" layoutX="34.0" layoutY="1947.0" mnemonicParsing="false" text="0 No he experimentado ningún cambio en mis hábitos de sueño. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox60" userData="1" layoutX="34.0" layoutY="1968.0" mnemonicParsing="false" text="1 Duermo un poco o menos más que lo habitual. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox61" userData="2" layoutX="34.0" layoutY="1989.0" mnemonicParsing="false" text="2 Duermo mucho más o menos que lo habitual. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox62" userData="3" layoutX="34.0" layoutY="2010.0" mnemonicParsing="false" text="3 Duermo la mayor parte del día o me despierto y no puedo volver a dormir">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Text layoutX="15.0" layoutY="1936.0" strokeType="OUTSIDE" strokeWidth="0.0" text="16. Cambios en los Hábitos de Sueño ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="checkBox63" userData="0" layoutX="34.0" layoutY="2074.0" mnemonicParsing="false" text="0 No estoy tan irritable que lo habitual. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox64" userData="1" layoutX="34.0" layoutY="2095.0" mnemonicParsing="false" text="1 Estoy más irritable que lo habitual. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox65" userData="2" layoutX="34.0" layoutY="2116.0" mnemonicParsing="false" text="2 Estoy mucho más irritable que lo habitual. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox66" userData="3" layoutX="34.0" layoutY="2137.0" mnemonicParsing="false" text="3 Estoy irritable todo el tiempo. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Text layoutX="15.0" layoutY="2063.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17. Irritabilidad ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="checkBox67" userData="0" layoutX="34.0" layoutY="2202.0" mnemonicParsing="false" text="0 No he experimentado ningún cambio en mi apetito. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox68" userData="1" layoutX="34.0" layoutY="2223.0" mnemonicParsing="false" text="1 Mi apetito es un poco menor o mayor que lo habitual. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox69" userData="2" layoutX="34.0" layoutY="2244.0" mnemonicParsing="false" text="2 Mi apetito es mucho menor o mayor que antes. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox70" userData="3" layoutX="34.0" layoutY="2265.0" mnemonicParsing="false" text="3 No tengo apetito en absoluto o quiero comer todo el día.">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Text layoutX="15.0" layoutY="2191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18. Cambios en el Apetito ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="checkBox71" userData="0" layoutX="34.0" layoutY="2325.0" mnemonicParsing="false" text="0 Puedo concentrarme tan bien como siempre. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox72" userData="1" layoutX="34.0" layoutY="2346.0" mnemonicParsing="false" text="1 No puedo concentrarme tan bien como habitualmente ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox73" userData="2" layoutX="34.0" layoutY="2367.0" mnemonicParsing="false" text="2 Me es difícil mantener la mente en algo por mucho tiempo. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox74" userData="3" layoutX="34.0" layoutY="2388.0" mnemonicParsing="false" text="3 Encuentro que no puedo concentrarme en nada. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Text layoutX="15.0" layoutY="2314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="19. Dificultad de Concentración ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="checkBox75" userData="0" layoutX="34.0" layoutY="2453.0" mnemonicParsing="false" text="0 No estoy más cansado o fatigado que lo habitual. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox76" userData="1" layoutX="34.0" layoutY="2474.0" mnemonicParsing="false" text="1 Me fatigo o me canso más fácilmente que lo habitual. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox77" userData="2" layoutX="34.0" layoutY="2495.0" mnemonicParsing="false" text="2 Estoy demasiado fatigado/cansado para hacer cosas que solía hacer.">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox78" userData="3" layoutX="34.0" layoutY="2516.0" mnemonicParsing="false" text="3 Estoy demasiado fatigado/cansado para hacer todo lo que solía hacer">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Text layoutX="15.0" layoutY="2442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20. Cansancio o Fatiga ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="checkBox79" userData="0" layoutX="34.0" layoutY="2580.0" mnemonicParsing="false" text="0 No he notado ningún cambio reciente en mi interés por el sexo. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox80" userData="1" layoutX="34.0" layoutY="2601.0" mnemonicParsing="false" text="1 Estoy menos interesado en el sexo de lo que solía estarlo. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox81" userData="2" layoutX="34.0" layoutY="2622.0" mnemonicParsing="false" text="2 Estoy mucho menos interesado en el sexo. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBox82" userData="3" layoutX="34.0" layoutY="2643.0" mnemonicParsing="false" text="3 He perdido completamente el interés en el sexo. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Text layoutX="15.0" layoutY="2569.0" strokeType="OUTSIDE" strokeWidth="0.0" text="21. Pérdida de Interés en el Sexo ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="sendButton" layoutX="182.0" layoutY="2686.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="181.0" onAction="#handleSendButtonAction" text="Enviar" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
    </children>
 </AnchorPane>
